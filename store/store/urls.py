@@ -1,10 +1,9 @@
 from django.contrib import admin
 from django.urls import path, include
-
 from products.views import index
-
 from django.conf.urls.static import static
 from django.conf import settings
+
 urlpatterns = [
     path('products/', include('products.urls', namespace='products')),
     path('admin/', admin.site.urls),
